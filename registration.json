@@ -1,17 +1,17 @@
 {
   "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
   "name": "GasChecker",
-  "description": "Multi-chain gas oracle MCP server. Free tier: single chain queries. Premium: all chains + recommendations via x402 micropayments.",
+  "description": "Multi-chain gas oracle MCP server. Free tier: single chain queries. Premium: all chains + recommendations via x402 micropayments (USDC on Base).",
   "image": "",
   "services": [
     {
       "name": "MCP",
-      "endpoint": "https://gaschecker-ten.vercel.app/mcp",
+      "endpoint": "https://gaschecker-cbmc.vercel.app/mcp",
       "version": "2025-06-18"
     },
     {
       "name": "web",
-      "endpoint": "https://gaschecker-ten.vercel.app/"
+      "endpoint": "https://gaschecker-cbmc.vercel.app/"
     }
   ],
   "x402Support": true,
