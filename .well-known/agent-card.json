@@ -1,0 +1,51 @@
+{
+  "schema_version": "0.3.0",
+  "name": "GasChecker",
+  "description": "Real-Time Gas Price Oracle & Transaction Cost Estimator. Multi-chain gas tracking across Ethereum, Base, Optimism, Arbitrum, Polygon with EIP-1559 analytics and x402 micropayment support.",
+  "url": "https://openclaw1pc.tail4d3fab.ts.net",
+  "version": "1.2.0",
+  "provider": {
+    "organization": "alogotron",
+    "url": "https://github.com/alogotron"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "defaultInputModes": ["text/plain"],
+  "defaultOutputModes": ["application/json", "text/plain"],
+  "skills": [
+    {
+      "id": "gas",
+      "name": "Gas Price Query",
+      "description": "Get real-time gas price for a specific blockchain",
+      "tags": ["gas", "blockchain", "ethereum", "base", "defi"],
+      "examples": ["What is the current gas price on Base?", "Get Ethereum gas price"]
+    },
+    {
+      "id": "gas_all",
+      "name": "Multi-Chain Gas Comparison",
+      "description": "Get gas prices across all supported chains simultaneously",
+      "tags": ["gas", "multi-chain", "comparison"],
+      "examples": ["Compare gas prices across all chains"]
+    },
+    {
+      "id": "gas_recommend",
+      "name": "Chain Recommendation",
+      "description": "Get recommendation for cheapest chain to transact on right now",
+      "tags": ["gas", "optimization", "recommendation"],
+      "examples": ["Which chain is cheapest right now?"]
+    },
+    {
+      "id": "chains",
+      "name": "Supported Chains",
+      "description": "List all supported blockchain networks",
+      "tags": ["chains", "networks"],
+      "examples": ["What chains do you support?"]
+    }
+  ],
+  "authentication": {
+    "schemes": ["x402"]
+  }
+}
