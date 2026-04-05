@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "name": "GasChecker",
+  "description": "Real-Time Gas Price Oracle for AI agents via MCP",
+  "version": "1.2.0",
+  "url": "https://openclaw1pc.tail4d3fab.ts.net/mcp",
+  "tools": [
+    {
+      "name": "gas",
+      "description": "Get current gas price for a blockchain. Chains: ethereum, base, arbitrum, optimism, polygon",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "chain": {"type": "string", "description": "Blockchain name", "default": "ethereum"}
+        }
+      }
+    },
+    {
+      "name": "gas_all",
+      "description": "Get gas prices for all supported chains at once",
+      "inputSchema": {"type": "object", "properties": {}}
+    },
+    {
+      "name": "gas_recommend",
+      "description": "Get recommendation for cheapest chain to transact on",
+      "inputSchema": {"type": "object", "properties": {}}
+    },
+    {
+      "name": "chains",
+      "description": "List all supported blockchain networks",
+      "inputSchema": {"type": "object", "properties": {}}
+    }
+  ],
+  "authentication": {
+    "type": "x402",
+    "recipient": "0xaab80bc6b6040ae845ce225181fd72297ba71b13",
+    "network": "base"
+  }
+}
